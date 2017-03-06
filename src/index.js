@@ -65,7 +65,7 @@ function fromStr(srcStr) {
   var out = gen(wrapAst, { format: { indent: { style: '  ' } } });
   // fs.writeFileSync('oout.js', out);
   // return out;
-  return uglify(out, { fromString: true }).code;
+  return uglify(out, { fromString: true, output: { ascii_only: true }}).code;
 }
 
 fromStr.inplace = function (file) {
