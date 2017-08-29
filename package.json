@@ -1,5 +1,5 @@
 {
-  "name": "ug",
+  "name": "js-confusor",
   "version": "1.0.0",
   "description": "a js uglifier",
   "main": "index.js",
